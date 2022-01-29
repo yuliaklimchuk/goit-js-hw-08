@@ -27,7 +27,7 @@ function createObject(email, message) {
 
 function handleSubmit(event) { 
     event.preventDefault();
-    console.log(localStorageData);
+    console.log(createObject(email.value, message.value));
     email.value = '';
     message.value = '';
     localStorage.clear();
